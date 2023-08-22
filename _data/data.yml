@@ -30,7 +30,7 @@ sidebar:
     # goodreads: # Number-Username, e.g. 123456-alandoe
     pdf: http://www.africau.edu/images/default/sample.pdf
 
-    # languages:
+    languages:
     #   title: Languages
     #   info:
     #     - idiom: English
@@ -133,7 +133,7 @@ experiences:
       #       - Bullet point
       #       - Bullet point
 
-# certifications:
+certifications:
 #       title: Certifications
 #       list:
 #         - name: CV Builder
@@ -201,7 +201,7 @@ projects:
       #   link: "#"
       #   tagline: "A responsive Bootstrap one page theme designed to help app developers promote their mobile apps"
 
-# oss:
+oss:
 #     title: OSS Contributions
 #     intro: >
 #       You can list your open source software contributions in this
