@@ -5,7 +5,7 @@
 sidebar:
     position: right # position of the sidebar : left or right
     about: False # set to False or comment line if you want to remove the "how to use?" in the sidebar
-    education: False # set to False if you want education in main section instead of in sidebar
+    education: True # set to False if you want education in main section instead of in sidebar
 
     # Profile information
     name: Sangmin Song
@@ -20,7 +20,7 @@ sidebar:
     # website: song-sangmin.github.io/ #do not add http://
     # linkedin: alandoe
     # xing: alandoe
-    github: @song-sangmin
+    github: song-sangmin
     # telegram: # add your nickname without '@' sign
     # gitlab:
     # bitbucket:
@@ -69,7 +69,7 @@ career-profile:
 education:
     title: Education
     info:
-      - degree: MSc/PhD in Oceanography
+      - degree: MSc PhD in Oceanography
         university: University of Washington Seattle
         time: 2021 - present
         details: |
@@ -80,7 +80,7 @@ education:
           pretium quis, sem.
             - Bullet point
             - Bullet point
-      - degree: BA in Biochemistry/Biophysics
+      - degree: BA in Biochemistry Biophysics
         university: Amherst College
         time: 2015 - 2019
         details: |
