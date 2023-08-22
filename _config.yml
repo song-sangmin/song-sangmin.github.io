@@ -3,6 +3,7 @@
 # Site Settings
 title: Song Sangmin
 url: 'https://song-sangmin.github.io/'
+theme: minima
 
 #change it according to your repository name
 # disabling since we are using a custom domain
