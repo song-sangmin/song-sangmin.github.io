@@ -10,7 +10,7 @@ sidebar:
     # Profile information
     name: Sangmin Song
     tagline: UW Oceanography
-    avatar: song_bio.jpeg  #place a 100x100 picture inside /assets/images/ folder and provide the name of the file below
+    avatar: profile_song.png  #place a 100x100 picture inside /assets/images/ folder and provide the name of the file below
 
     # Sidebar links
     email: sangsong@uw.edu
