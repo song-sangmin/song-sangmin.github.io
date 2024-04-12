@@ -10,7 +10,7 @@ sidebar:
     # Profile information
     name: Song Sangmin
     tagline: UW Oceanography
-    avatar: profile_song.png  #place a 100x100 picture inside /assets/images/ folder and provide the name of the file below
+    avatar: SONG_ID.png  #place a 100x100 picture inside /assets/images/ folder and provide the name of the file below
 
     # Sidebar links
     email: sangsong@uw.edu
@@ -55,6 +55,7 @@ sidebar:
           # link:
 
         - item: Southern Ocean dynamics
+
     skills:
         title: Skills
         info:
@@ -97,7 +98,7 @@ education:
             - GPA 3.96/4.00, Degree with Distinction
 projects:
     title: Projects
-    intro: >
+    # intro: >
       # You can list your side projects in this
       # section. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
       # Vestibulum et ligula in nunc bibendum fringilla a eu lectus.
@@ -152,8 +153,7 @@ experiences:
             - Mathematical simulation of random neural processes
             - Research fellow between Amherst College Biology (J Trapani) and Smith College Mathematics (N Tania)
             - Presented in Biophysical Society 61st Annual Meeting Poster Session (Feb 2017)
-
-First-author publication in Scientific Reports, Issue 8, Article ID 14851 (Oct 2018)
+            - First-author publication in Scientific Reports, Issue 8, Article ID 14851 (Oct 2018)
 
       # - role: Laboratory Assistant
       #   time: 2018 - 2020 
