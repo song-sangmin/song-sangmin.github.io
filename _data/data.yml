@@ -126,20 +126,20 @@ experiences:
     title: Experiences
     info:
       - role: Graduate Researcher
-        time: 2021 - Present
-        company: UW Oceanography
+        time: Aug 2021 - Present
+        company: UW School of Oceanography
         details: |
-          # Describe your role here lorem ipsum dolor sit amet, consectetuer
-          # adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.
-          # Cum sociis natoque penatibus et magnis dis parturient montes,
-          # nascetur ridiculus mus. Donec quam felis, ultricies nec,
-          # pellentesque eu, pretium quis, sem. Nulla consequat massa quis
-          # enim. Donec pede justo. Sed ut perspiciatis unde omnis iste natus
-          # error sit voluptatem accusantium doloremque laudantium, totam rem
-          # aperiam, eaque ipsa quae ab illo inventore veritatis et quasi
-          # architecto beatae vitae dicta sunt explicabo.
+
             - Advised by Alison Gray, BGC-Argo Float Lab
-            # - Bullet point
+            - Collaborators: Andy Thompson (Caltech), Lily Dove (Brown), Dhruv Balwada (Lamont-Doherty), 
+            Paige Lavin (NOAA-PMEL), Zachary Nachod (UH Manoa)
+            - Master’s project combines machine learning prediction and signal processing 
+            to investigate scales of mixing and biological-physical interactions in the turbulent Southern Ocean
+            - Novel observation-based nutrient estimates at small scales using a Random Forest approach
+            - Presented at Ocean Sciences Meeting 2024, Biophysical Interactions Poster Session
+            - Paper in progress, for submission to AMS Artificial Intelligence in Earth Systems
+
+
       - role: Biochemical Modeling Research Assistant
         time: 2016 - 2018
         company: 5 College Biomathematics Consortium
@@ -150,6 +150,11 @@ experiences:
           # nascetur ridiculus mus. Donec quam felis, ultricies nec,
           # pellentesque eu, pretium quis, sem.
             - Mathematical simulation of random neural processes
+            - Research fellow between Amherst College Biology (J Trapani) and Smith College Mathematics (N Tania)
+            - Presented in Biophysical Society 61st Annual Meeting Poster Session (Feb 2017)
+
+First-author publication in Scientific Reports, Issue 8, Article ID 14851 (Oct 2018)
+
       # - role: Laboratory Assistant
       #   time: 2018 - 2020 
       #   company: Amherst College
@@ -226,26 +231,29 @@ oss:
 publications:
     title: Publications
     intro: |
-      You can list your publications in this section. Lorem ipsum dolor sit
-      amet, consectetur adipiscing elit. Vestibulum et ligula in nunc
-      bibendum fringilla a eu lectus.
-    papers:
-      - title: The Art of Computer Programming
-        link: "#"
-        authors: Donald E. Knuth
-        conference: Addison-Wesley, 1968
+      - Song, S., Lee, J. A., Kiselev, I., Iyengar, V., Trapani, J. G., & Tania, N. (2018). 
+      Mathematical modeling and analyses of interspike-intervals of spontaneous activity in afferent neurons of the zebrafish lateral line. 
+      Scientific Reports, 8(1), 14851.
+      - Liao, J., Song, S., Gusscott, S., Fu, Z., VanderKolk, I., Busscher, B. M., ... & Szabo´, P. E. (2023). 
+      Establishment of paternal methylation imprint at the H19/Igf2 imprinting control region. Science Advances, 9(36)
+      
+    # papers:
+    #   - title: The Art of Computer Programming
+    #     link: "#"
+    #     authors: Donald E. Knuth
+    #     conference: Addison-Wesley, 1968
 
-      - title: "Genetic Programming III: Darwinian Invention &amp; Problem Solving"
-        link: "#"
-        authors: Koza, J.R., Andre, D., Bennett, F.H., Keane, M.A.
-        conference: "Morgan Kaufmann Publishers Inc., San Francisco, CA, USA, 1st edn. (1999)"
+    #   - title: "Genetic Programming III: Darwinian Invention &amp; Problem Solving"
+    #     link: "#"
+    #     authors: Koza, J.R., Andre, D., Bennett, F.H., Keane, M.A.
+    #     conference: "Morgan Kaufmann Publishers Inc., San Francisco, CA, USA, 1st edn. (1999)"
 
-      - title: A syntax directed compiler for Algol 60
-        link: "#"
-        authors: Edgar T. Irons
-        conference: "Comm. ACM 4 (1961), 51–55"
+    #   - title: A syntax directed compiler for Algol 60
+    #     link: "#"
+    #     authors: Edgar T. Irons
+    #     conference: "Comm. ACM 4 (1961), 51–55"
 
-skills:
+# skills:
     # title: Presentations
 
     # toolset:
