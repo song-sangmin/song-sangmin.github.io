@@ -8,7 +8,7 @@ sidebar:
     education: True # set to False if you want education in main section instead of in sidebar
 
     # Profile information
-    name: Sangmin Song
+    name: Song Sangmin
     tagline: UW Oceanography
     avatar: profile_song.png  #place a 100x100 picture inside /assets/images/ folder and provide the name of the file below
 
@@ -28,7 +28,7 @@ sidebar:
     # stack-overflow: # Number/Username, e.g. 123456/alandoe
     # codewars:
     # goodreads: # Number-Username, e.g. 123456-alandoe
-    pdf: http://www.africau.edu/images/default/sample.pdf
+    # pdf: http://www.africau.edu/images/default/sample.pdf
 
     languages:
     #   title: Languages
@@ -45,33 +45,37 @@ sidebar:
     interests:
       title: Research Interests
       info:
-        - item: Southern Ocean
+        - item: Machine Learning
           # link:
 
         - item: Biogeochemical-physical interactions
           # link:
 
-        - item: Machine Learning
+        - item: Autonomous instruments 
           # link:
 
-        - item: Autonomous profilers
+        - item: Southern Ocean dynamics
+    skills:
+        title: Skills
+        info:
+            - item: 
+        
 
 career-profile:
     title: Overview
     summary: |
-      Summarise your career here lorem ipsum dolor sit amet, consectetuer
-      adipiscing elit. You can [download this free resume/CV template here]().
-      Aenean commodo ligula eget dolor aenean massa. Cum sociis natoque
-      penatibus et magnis dis parturient montes, nascetur ridiculus mus.
-      Donec quam felis, ultricies nec, pellentesque eu.
-      Second paragraph if required.
+      I apply machine learning techniques to observational data from autonomous profilers (BGC-Argo floats and Seagliders). 
+      Our regional Random Forest model has high predictive performance during testing, 
+      and can be used to generate novel, high-resolution nutrient maps in the ocean interior. 
+      My research explore interactions between physical and biogeochemical processes, 
+      especially at small-scales usually difficult to observe. 
     
 education:
     title: Education
     info:
       - degree: MSc PhD in Oceanography
         university: University of Washington Seattle
-        time: 2021 - present
+        time: Sep 2021 - Dec 2023 
         details: |
           Describe your study here lorem ipsum dolor sit amet, consectetuer
           adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum
@@ -82,25 +86,25 @@ education:
             - Bullet point
       - degree: BA in Biochemistry Biophysics
         university: Amherst College
-        time: 2015 - 2019
+        time: Sep 2015 - May 2019
         details: |
-          Describe your study here lorem ipsum dolor sit amet, consectetuer
-          adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum
-          sociis natoque penatibus et magnis dis parturient montes, nascetur
-          ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu,
-          pretium quis, sem.
-            - Bullet point
-            - Bullet point
+          # Describe your study here lorem ipsum dolor sit amet, consectetuer
+          # adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum
+          # sociis natoque penatibus et magnis dis parturient montes, nascetur
+          # ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu,
+          # pretium quis, sem.
+            - Frederick S. Lane Fellow
+            - GPA 3.96/4.00, Degree with Distinction
 projects:
     title: Projects
     intro: >
-      You can list your side projects in this
-      section. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-      Vestibulum et ligula in nunc bibendum fringilla a eu lectus.
+      # You can list your side projects in this
+      # section. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+      # Vestibulum et ligula in nunc bibendum fringilla a eu lectus.
     assignments:
-      - title: Velocity
-        link: "#hook"
-        tagline: "A responsive website template designed to help startups promote, market and sell their products."
+      - title: Southern Ocean Glider Observations of the Submesoscales
+        link: "#https://songsangmin.wixsite.com/ocean/research"
+        tagline: "Random Forest Regression on multi-platform, in-situ ocean observations"
 
       # - title: DevStudio
       #   link: "#"
@@ -125,28 +129,27 @@ experiences:
         time: 2021 - Present
         company: UW Oceanography
         details: |
-          Describe your role here lorem ipsum dolor sit amet, consectetuer
-          adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.
-          Cum sociis natoque penatibus et magnis dis parturient montes,
-          nascetur ridiculus mus. Donec quam felis, ultricies nec,
-          pellentesque eu, pretium quis, sem. Nulla consequat massa quis
-          enim. Donec pede justo. Sed ut perspiciatis unde omnis iste natus
-          error sit voluptatem accusantium doloremque laudantium, totam rem
-          aperiam, eaque ipsa quae ab illo inventore veritatis et quasi
-          architecto beatae vitae dicta sunt explicabo.
-            - Bullet point
-            - Bullet point
+          # Describe your role here lorem ipsum dolor sit amet, consectetuer
+          # adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.
+          # Cum sociis natoque penatibus et magnis dis parturient montes,
+          # nascetur ridiculus mus. Donec quam felis, ultricies nec,
+          # pellentesque eu, pretium quis, sem. Nulla consequat massa quis
+          # enim. Donec pede justo. Sed ut perspiciatis unde omnis iste natus
+          # error sit voluptatem accusantium doloremque laudantium, totam rem
+          # aperiam, eaque ipsa quae ab illo inventore veritatis et quasi
+          # architecto beatae vitae dicta sunt explicabo.
+            - Advised by Alison Gray, BGC-Argo Float Lab
+            # - Bullet point
       - role: Biochemical Modeling Research Assistant
         time: 2016 - 2018
         company: 5 College Biomathematics Consortium
         details: |
-          Describe your role here lorem ipsum dolor sit amet, consectetuer
-          adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.
-          Cum sociis natoque penatibus et magnis dis parturient montes,
-          nascetur ridiculus mus. Donec quam felis, ultricies nec,
-          pellentesque eu, pretium quis, sem.
-            - Bullet point
-            - Bullet point
+          # Describe your role here lorem ipsum dolor sit amet, consectetuer
+          # adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.
+          # Cum sociis natoque penatibus et magnis dis parturient montes,
+          # nascetur ridiculus mus. Donec quam felis, ultricies nec,
+          # pellentesque eu, pretium quis, sem.
+            - Mathematical simulation of random neural processes
       # - role: Laboratory Assistant
       #   time: 2018 - 2020 
       #   company: Amherst College
