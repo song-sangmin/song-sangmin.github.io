@@ -1,22 +1,17 @@
 {
   "publications": [
     {
-      "title": "[Paper Title 1]",
+      "title": "Random forest regression using autonomous in situ ocean observations: Inferring small-scale nutrient variability during a Southern Ocean field experiment",
       "authors": [
-        "Author 1*",
-        "Author 2*",
-        "Author 3",
-        "Author 4",
-        "Author 5",
-        "Author 6",
-        "Author 7",
-        "Author 8",
-        "Author 9",
-        "Author 10",
-        "Author 11†",
-        "Author 12†"
+        "Song, S.",
+        "Lavin, P.D."
+        "Gray, A. R.*",
+        "Nachod, Z.",
+        "Balwada, D.",
+        "Dove L.A.",
+        "Thompson A. F."
       ],
-      "venue": "Preprint (2025)",
+      "venue": "Artificial Intelligence for the Earth Systems (2026), accepted",
       "thumbnail": "images/thumbs/1.jpg",
       "selected": 1,
       "award": "",
