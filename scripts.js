@@ -1,11 +1,11 @@
 // Global variables
-let allPublications = [];
+let allProjects = [];
 let showingSelected = true;
 
 // Initialize the page
 document.addEventListener('DOMContentLoaded', function() {
-  // Load publications data
-  loadPublications();
+  // Load projects data
+  loadProjects();
   
   // Initialize animation delays for sections
   const sections = document.querySelectorAll('section');
@@ -14,15 +14,15 @@ document.addEventListener('DOMContentLoaded', function() {
   });
   
   // Add event listener for toggle button
-  const toggleButton = document.getElementById('toggle-publications');
+  const toggleButton = document.getElementById('toggle-projects');
   if (toggleButton) {
-    toggleButton.addEventListener('click', togglePublications);
+    toggleButton.addEventListener('click', toggleProjects);
   }
 });
 
-// Load publications from JSON file
-function loadPublications() {
-  fetch('publications.json')
+// Load projects from JSON file
+function loadProjects() {
+  fetch('projects.json')
     .then(response => {
       if (!response.ok) {
         throw new Error(`Network response was not ok: ${response.status}`);
@@ -30,63 +30,63 @@ function loadPublications() {
       return response.json();
     })
     .then(data => {
-      console.log("Publications loaded successfully:", data);
-      allPublications = data.publications;
-      renderPublications(true);
+      console.log("Projects loaded successfully:", data);
+      allProjects = data.projects;
+      renderProjects(true);
     })
     .catch(error => {
-      console.error('Error loading publications:', error);
-      // Create fallback publications display if JSON loading fails
-      displayFallbackPublications();
+      console.error('Error loading projects:', error);
+      // Create fallback projects display if JSON loading fails
+      displayFallbackProjects();
     });
 }
 
 // Fallback if JSON loading fails
-function displayFallbackPublications() {
-  const container = document.getElementById('publications-container');
-  container.innerHTML = `Error loading publications.`;
+function displayFallbackProjects() {
+  const container = document.getElementById('projects-container');
+  container.innerHTML = `Error loading projects.`;
 }
 
-// Toggle between showing all or selected publications
-function togglePublications() {
+// Toggle between showing all or selected projects
+function toggleProjects() {
   showingSelected = !showingSelected;
-  renderPublications(showingSelected);
+  renderProjects(showingSelected);
   
   // Update button text
-  const toggleButton = document.getElementById('toggle-publications');
+  const toggleButton = document.getElementById('toggle-projects');
   toggleButton.textContent = showingSelected ? 'Show All' : 'Show Selected';
   const toggleHeader = document.getElementById('toggle-header');
-  toggleHeader.textContent = showingSelected ? 'Selected Publications' : 'All Publications';
+  toggleHeader.textContent = showingSelected ? 'Selected Projects' : 'All Projects';
 }
 
-// Render publications based on selection state
-function renderPublications(selectedOnly) {
-  const publicationsContainer = document.getElementById('publications-container');
-  publicationsContainer.innerHTML = '';
+// Render projects based on selection state
+function renderProjects(selectedOnly) {
+  const projectsContainer = document.getElementById('projects-container');
+  projectsContainer.innerHTML = '';
   
   const pubsToShow = selectedOnly ? 
-    allPublications.filter(pub => pub.selected === 1) : 
-    allPublications;
+    allProjects.filter(pub => pub.selected === 1) : 
+    allProjects;
   
-  pubsToShow.forEach(publication => {
-    const pubElement = createPublicationElement(publication);
-    publicationsContainer.appendChild(pubElement);
+  pubsToShow.forEach(project => {
+    const pubElement = createProjectElement(project);
+    projectsContainer.appendChild(pubElement);
   });
 }
 
-// Create HTML element for a publication
-function createPublicationElement(publication) {
+// Create HTML element for a project
+function createProjectElement(project) {
   const pubItem = document.createElement('div');
-  pubItem.className = 'publication-item';
+  pubItem.className = 'project-item';
   
   // Create thumbnail
   const thumbnail = document.createElement('div');
   thumbnail.className = 'pub-thumbnail';
-  thumbnail.onclick = () => openModal(publication.thumbnail);
+  thumbnail.onclick = () => openModal(project.thumbnail);
   
   const thumbnailImg = document.createElement('img');
-  thumbnailImg.src = publication.thumbnail;
-  thumbnailImg.alt = `${publication.title} thumbnail`;
+  thumbnailImg.src = project.thumbnail;
+  thumbnailImg.alt = `${project.title} thumbnail`;
   thumbnail.appendChild(thumbnailImg);
   
   // Create content container
@@ -96,7 +96,7 @@ function createPublicationElement(publication) {
   // Add title
   const title = document.createElement('div');
   title.className = 'pub-title';
-  title.textContent = publication.title;
+  title.textContent = project.title;
   content.appendChild(title);
   
   // Add authors with highlight
@@ -105,14 +105,14 @@ function createPublicationElement(publication) {
   
   // Format authors with highlighting
   let authorsHTML = '';
-  publication.authors.forEach((author, index) => {
+  project.authors.forEach((author, index) => {
     if (author.includes('Author 3')) { // TODO: Highlight specific author
       authorsHTML += `<span class="highlight-name">${author}</span>`;
     } else {
       authorsHTML += author;
     }
     
-    if (index < publication.authors.length - 1) {
+    if (index < project.authors.length - 1) {
       authorsHTML += ', ';
     }
   });
@@ -126,49 +126,68 @@ function createPublicationElement(publication) {
   
   const venue = document.createElement('div');
   venue.className = 'pub-venue';
-  venue.textContent = publication.venue;
+  venue.textContent = project.venue;
   venueContainer.appendChild(venue);
   
-  // Add award if it exists
-  if (publication.award && publication.award.length > 0) {
-    const award = document.createElement('div');
-    award.className = 'pub-award';
-    award.textContent = publication.award;
-    venueContainer.appendChild(award);
-  }
+  // // Add award if it exists
+  // if (project.award && project.award.length > 0) {
+  //   const award = document.createElement('div');
+  //   award.className = 'pub-award';
+  //   award.textContent = project.award;
+  //   venueContainer.appendChild(award);
+  // }
   
   content.appendChild(venueContainer);
+
+  // Add keywords
+  const keywordContainer = document.createElement('div');
+  keywordContainer.className = 'pub-keyword-container';
+  
+  const keyword = document.createElement('div');
+  keyword.className = 'pub-keyword';
+  keyword.textContent = project.keyword;
+  keywordContainer.appendChild(keyword);
+  
+  content.appendChild(keywordContainer);
+
   
   // Add links if they exist
-  if (publication.links) {
+  if (project.links) {
     const links = document.createElement('div');
     links.className = 'pub-links';
     
-    if (publication.links.pdf) {
+    if (project.links.pdf) {
       const pdfLink = document.createElement('a');
-      pdfLink.href = publication.links.pdf;
-      pdfLink.textContent = '[Article]';
+      pdfLink.href = project.links.pdf;
+      pdfLink.textContent = '[PDF]';
       links.appendChild(pdfLink);
     }
+
+    if (project.links.article) {
+      const articleLink = document.createElement('a');
+      articleLink.href = project.links.article;
+      articleLink.textContent = '[Article]';
+      links.appendChild(articleLink);
+    }
     
-    if (publication.links.code) {
+    if (project.links.code) {
       const codeLink = document.createElement('a');
-      codeLink.href = publication.links.code;
+      codeLink.href = project.links.code;
       codeLink.textContent = '[Code]';
       links.appendChild(codeLink);
     }
     
-    if (publication.links.project) {
-      const projectLink = document.createElement('a');
-      projectLink.href = publication.links.project;
-      projectLink.textContent = '[Project Page]';
-      links.appendChild(projectLink);
+    if (project.links.page) {
+      const pageLink = document.createElement('a');
+      pageLink.href = project.links.page;
+      pageLink.textContent = '[Page]';
+      links.appendChild(pageLink);
     }
     
     content.appendChild(links);
   }
   
-  // Assemble the publication item
+  // Assemble the project item
   pubItem.appendChild(thumbnail);
   pubItem.appendChild(content);
   

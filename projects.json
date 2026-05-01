@@ -1,5 +1,5 @@
 {
-  "publications": [
+  "projects": [
     {
       "title": "A novel regression framework for reconstructing Southern Ocean surface carbon using merged ship and float observations",
       "authors": [
@@ -29,47 +29,12 @@
       ],
       "venue": "Artificial Intelligence for the Earth Systems (2026), accepted",
       "thumbnail": "/images/randomforest_upscaling.png",
+      "keyword":"machine learning",
       "selected": 1,
       "award": "",
       "links": {
         "pdf": "#",
         "code": "#"
-      }
-    },
-    {
-      "title": "Mathematical Modeling and Analyses of Interspike-Intervals of Spontaneous Activity in Afferent Neurons of the Zebrafish Lateral Line",
-      "authors": [
-        "Liao, J.",
-        "<strong>Song, S.</strong>",
-        "Lee, J. A.",
-        "Kiselev, I.",
-        "Iyengar, V.",
-        "Trapani, J. G.*",
-        "Tania, N.*"
-
-      ],
-      "venue": "Nature Scientific Reports (2018)",
-      "thumbnail": "/images/randomforest_upscaling.png",
-      "selected": 1,
-      "award": "",
-      "links": {
-        "article":"https://nature.com/articles/s41598-018-33064-z"
-      }
-    },
-    {
-      "title": "[Paper Title 2]",
-      "authors": [
-        "Author 1*",
-        "Author 2*"
-      ],
-      "venue": "Preprint (2025)",
-      "thumbnail": "/images/thumbs/2.jpg",
-      "selected": 0,
-      "award": "",
-      "links": {
-        "pdf": "#",
-        "code": "#",
-        "project": "#"
       }
     }
   ]

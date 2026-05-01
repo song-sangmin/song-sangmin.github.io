@@ -103,11 +103,12 @@ nav a:hover, .social-links-header a:hover {
 }
 
 /* Unified animation for elements (not sections) */
-.publication-item, .award-item, .service-category, .misc-item, .news-list li {
+.project-item, .conference-item, .service-category, .misc-item, .news-list li {
   transition: transform var(--transition-time) ease;
 }
 
-.publication-item:hover, .award-item:hover, 
+/*.conference-item:hover, */
+.project-item:hover, 
 .service-category:hover, .misc-item:hover, .news-list li:hover {
   transform: translateX(var(--animation-offset));
 }
@@ -132,14 +133,14 @@ section {
 }
 
 /* Publication styles */
-.publications-header {
+.projects-header {
   display: flex;
   justify-content: space-between;
   align-items: center;
   margin-bottom: 1.5rem;
 }
 
-.toggle-publications {
+.toggle-projects {
   background-color: rgba(74, 116, 185, 0.08);
   color: var(--accent-color);
   border: none;
@@ -150,12 +151,12 @@ section {
   transition: all var(--transition-time) ease;
 }
 
-.toggle-publications:hover {
+.toggle-projects:hover {
   background-color: var(--accent-color);
   color: white;
 }
 
-.publication-item {
+.project-item {
   margin-bottom: 1.5rem;
   padding: 0.75rem 0;
   border-bottom: 1px solid var(--border-color);
@@ -183,7 +184,7 @@ section {
 }
 
 .pub-thumbnail:hover img {
-  transform: scale(1.08);
+  transform: scale(1.0);
 }
 
 .pub-content {
@@ -217,6 +218,20 @@ section {
 }
 
 .pub-venue {
+  font-size: 0.9rem;
+  font-style: italic;
+  color: var(--text-secondary);
+}
+
+.pub-keyword-container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.75rem;
+  margin-bottom: 0.5rem;
+}
+
+.pub-keyword {
   font-size: 0.9rem;
   font-style: italic;
   color: var(--text-secondary);
@@ -270,23 +285,23 @@ section {
 }
 
 /* Awards section */
-.award-item {
+.conference-item {
   display: flex;
   align-items: baseline;
   margin-bottom: 0.1rem;
 }
 
-.award-year {
+.conference-year {
   font-weight: 500;
   color: var(--accent-color);
   flex: 0 0 80px;
 }
 
-.award-desc {
+.conference-desc {
   flex: 1;
 }
 
-.award-desc small {
+.conference-desc small {
   font-size: 0.85rem;
   color: var(--text-secondary);
   margin-left: 0.5rem;
@@ -294,7 +309,7 @@ section {
 
 /* News section */
 .news-container {
-  max-height: 300px;
+  max-height: 500px;
   overflow-y: auto;
   scrollbar-width: none;
   -ms-overflow-style: none;
@@ -447,7 +462,7 @@ strong {
   }
 
   /* Disable right-moving hover animations on mobile */
-  .publication-item:hover, .award-item:hover, 
+  .project-item:hover, .conference-item:hover, 
   .service-category:hover, .misc-item:hover, .news-list li:hover,
   nav a:hover, .social-links-header a:hover, .pub-links a:hover {
     transform: none !important;
