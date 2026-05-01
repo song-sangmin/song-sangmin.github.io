@@ -147,7 +147,7 @@ function createPublicationElement(publication) {
     if (publication.links.pdf) {
       const pdfLink = document.createElement('a');
       pdfLink.href = publication.links.pdf;
-      pdfLink.textContent = '[PDF]';
+      pdfLink.textContent = '[Article]';
       links.appendChild(pdfLink);
     }
     
