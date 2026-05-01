@@ -1,6 +1,22 @@
 {
   "publications": [
     {
+      "title": "A novel regression framework for reconstructing Southern Ocean surface carbon using merged ship and float observations",
+      "authors": [
+        "Song, S.",
+        "Gray, A. R."
+      ],
+      "venue": "JGR Machine Learning and Computation, in prep.",
+      "thumbnail": "/images/crusoe-mapping.png",
+      "selected": 1,
+      "award": "",
+      "links": {
+        "pdf": "#",
+        "code": "#",
+        "project": "#"
+      }
+    },
+    {
       "title": "Random forest regression using autonomous in situ ocean observations: Inferring small-scale nutrient variability during a Southern Ocean field experiment",
       "authors": [
         "Song, S.",
@@ -12,7 +28,7 @@
         "Thompson, A. F."
       ],
       "venue": "Artificial Intelligence for the Earth Systems (2026), accepted",
-      "thumbnail": "/images/crusoe-mapping.png",
+      "thumbnail": "/images/randomforest_upscaling.png",
       "selected": 1,
       "award": "",
       "links": {
