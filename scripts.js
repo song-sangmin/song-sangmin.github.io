@@ -155,6 +155,21 @@ function createProjectElement(project) {
   if (project.links) {
     const links = document.createElement('div');
     links.className = 'pub-links';
+
+    if (project.links.page) {
+      const pageLink = document.createElement('a');
+      pageLink.href = project.links.page;
+      pageLink.textContent = '[Project Page]';
+      links.appendChild(pageLink);
+    }
+    
+    if (project.links.article) {
+      const articleLink = document.createElement('a');
+      articleLink.href = project.links.article;
+      articleLink.textContent = '[Article]';
+      links.appendChild(articleLink);
+    }
+
     
     if (project.links.pdf) {
       const pdfLink = document.createElement('a');
@@ -163,27 +178,14 @@ function createProjectElement(project) {
       links.appendChild(pdfLink);
     }
 
-    if (project.links.article) {
-      const articleLink = document.createElement('a');
-      articleLink.href = project.links.article;
-      articleLink.textContent = '[Article]';
-      links.appendChild(articleLink);
-    }
-    
+
     if (project.links.code) {
       const codeLink = document.createElement('a');
       codeLink.href = project.links.code;
       codeLink.textContent = '[Code]';
       links.appendChild(codeLink);
     }
-    
-    if (project.links.page) {
-      const pageLink = document.createElement('a');
-      pageLink.href = project.links.page;
-      pageLink.textContent = '[Page]';
-      links.appendChild(pageLink);
-    }
-    
+
     content.appendChild(links);
   }
   
