@@ -10,7 +10,8 @@
       "selected": 1,
       "award": "",
       "links": {
-        "page": "/projects/crusoe-overview.html"
+        "page": "/projects/crusoe-overview.html",
+        "pdf": "/projects/crusoe-poster-TIDES2026.pdf"
     
       }
     },
@@ -25,7 +26,7 @@
       "award": "",
       "links": {
         "code": "https://github.com/song-sangmin/RandomForestRegression_SOGOS",
-        "pdf": "/projects/sogos-manuscript-AIES-2026.pdf"
+        "article": "/projects/sogos-manuscript-AIES-2026.pdf"
       }
     }
   ]

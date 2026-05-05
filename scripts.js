@@ -174,7 +174,7 @@ function createProjectElement(project) {
     if (project.links.pdf) {
       const pdfLink = document.createElement('a');
       pdfLink.href = project.links.pdf;
-      pdfLink.textContent = '[PDF]';
+      pdfLink.textContent = '[Poster]';
       links.appendChild(pdfLink);
     }
 
